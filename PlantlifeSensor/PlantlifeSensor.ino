@@ -97,9 +97,9 @@ void loop() {
   
   // feed->save('slime');
 
-  heartbeatFeed->save('ping');
+  heartbeatFeed->save("ping");
 
-  delay(1000);
+  delay(60000); // 1 minute
 }
 
 
