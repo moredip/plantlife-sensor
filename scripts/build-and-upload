@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e -u
+
+USB_PORT='/dev/ttyUSB0'
+USB_PORT='/dev/cu.wchusbserial14140'
+
+./scripts/build
+arduino-cli upload -p ${USB_PORT} --fqbn esp8266:esp8266:d1_mini PlantlifeSensor
